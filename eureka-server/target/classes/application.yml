@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: admin
+      password: select111***
+eureka:
+  server:
+    enable-self-preservation: false
+  instance:
+    status-page-url-path: /actuator/info
+    health-check-url-path: /actuator/health
+    home-page-url-path: /
+    hostname: localhost
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+server:
+  port: 8500
+  tomcat:
+    uri-encoding: UTF-8
+info:
+  name: 'eureka-server'
+  description: 'Parent pom providing dependency and plugin management for applications
+		built with Maven'
+  version: '1.0-SNAPSHOT'
+  spring-boot-version: '2.0.4.RELEASE'
+  spring-cloud-version: 'Finchley.SR1'

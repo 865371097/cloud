@@ -1,0 +1,39 @@
+.git
+logs
+rebel.xml
+target/:
+applications/**/target/
+base-servers/**/target/
+framework/**/target/
+!.mvn/wrapper/maven-wrapper.jar
+### VSCODE ###
+.vscode
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/:
+applications/**/build/
+base-servers/**/build/
+framework/**/build/
+frontend/saas-web/build/
+nbbuild/
+dist/
+node_modules/
+nbdist/
+.nb-gradle/
+generatorConfig.xml
+
+*.log:
