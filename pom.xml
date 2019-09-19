@@ -49,6 +49,7 @@
         <poi.version>3.17</poi.version>
         <zxing.version>3.3.0</zxing.version>
         <threadloacl.version>2.10.2</threadloacl.version>
+        <hystrix.version>2.0.2.RELEASE</hystrix.version>
     </properties>
 
 
@@ -226,6 +227,11 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>transmittable-thread-local</artifactId>
                 <version>${threadloacl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+                <version>${hystrix.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

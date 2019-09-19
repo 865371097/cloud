@@ -39,3 +39,15 @@ info:
   version: '@project.version@'
   spring-boot-version: '@spring.boot.version@'
   spring-cloud-version: '@spring.cloud.version@'
+hystrix:
+  threadpool:
+    default:
+      coreSize: 15 ##并发执行的最大线程数，默认10
+      maxQueueSize: 100 ##BlockingQueue的最大队列数
+      queueSizeRejectionThreshold: 50 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 110000
