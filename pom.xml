@@ -41,7 +41,7 @@
         <swagger.version>2.7.0</swagger.version>
         <feign.form.version>3.0.3</feign.form.version>
         <commons.fileupload.version>1.3.3</commons.fileupload.version>
-        <commons.compress.version>1.18</commons.compress.version>
+        <commons.compress.version>1.21</commons.compress.version>
         <docker.repository>10.1.81.1:4000</docker.repository>
         <docker.registry.name>saas</docker.registry.name>
         <guava.version>18.0</guava.version>
